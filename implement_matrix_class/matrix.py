@@ -58,7 +58,7 @@ class Matrix(object):
         if not self.is_square():
             raise(ValueError, "Cannot calculate the trace of a non-square matrix.")
         
-        tr = sum([self.g[i][j] for i in range(len(self.g)) for j in range(len(self.g[0])) if i == j])
+        tr = sum([self.g[i][j] for i in range(self.h) for j in range(self.w) if i == j])
         
         return tr
     
@@ -196,17 +196,11 @@ class Matrix(object):
         """
         Defines the behavior of * operator (matrix multiplication)
         """
-        try:
-            # handle 2x2 matrix
-            otherT = other.T()
-            mul_ls = [Matrix.dot(self.g[i], otherT[j]) for i in range(len(self.g)) for j in range(len(otherT.g[0]))]
-            mtx_mul = Matrix([[mul_ls[0], mul_ls[1]],[mul_ls[2], mul_ls[3]]])
-            
-        except:
-            # handle 1x1 matrix
-            mtx_mul = Matrix.dot(self.g[0], otherT[0])
+        result_mul = [[sum(self.g[i][k] * other.g[k][j] for k in range(other.h)) \
+                       for j in range(other.w)] for i in range(self.h)]
         
-        return mtx_mul
+        if self.w == other.h:
+            return Matrix(result_mul)
     
     def __rmul__(self, other):
         """
