@@ -55,12 +55,14 @@ class Matrix(object):
         """
         Calculates the trace of a matrix (sum of diagonal entries).
         """
+        
         if not self.is_square():
-            raise(ValueError, "Cannot calculate the trace of a non-square matrix.")
-        
-        tr = sum([self.g[i][j] for i in range(self.h) for j in range(self.w) if i == j])
-        
-        return tr
+            raise ValueError ('Cannot calculate the trace of a non-square matrix.')
+
+        trace = 0
+        for i in range(self.h):
+            trace+=self[i][i]
+        return trace
     
     
     def inverse(self):
