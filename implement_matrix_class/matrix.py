@@ -216,16 +216,10 @@ class Matrix(object):
         """
         if isinstance(other, numbers.Number):
             pass
-        
-            rmul_ls = [other * self[i][j] for i in range(len(self.g)) for j in range (len(self.g[0]))]
-        try:
-            mtx_rmul = Matrix([[rmul_ls[0], rmul_ls[1]],[rmul_ls[2], rmul_ls[3]]])
-            
-        except:
-            mtx_rmul = other * self.g[0][0]
-            
-        
-        return mtx_rmul
+        rmul_ls = [[float(other * self.g[i][j]) for j in range(self.h)] for i in range(self.w)]
+        return Matrix(rmul_ls)
+
+
 
 
     
