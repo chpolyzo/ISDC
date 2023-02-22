@@ -14,36 +14,27 @@ def initialize_beliefs(grid):
         beliefs.append(row)
     return beliefs
 
-
 def sense(color, grid, beliefs, p_hit, p_miss):
-    multiplier = lambda x: p_hit if x == color else p_miss
-    single_beliefs = [[multiplier(grid[i][j]) for j in range(len(grid[0]))] for i in range(len(grid))]
-    s = sum(map(sum, single_beliefs))
-    new_beliefs = [[single_beliefs[i][j]/s for j in range(len(grid[0]))] for i in range(len(grid))]
+    new_beliefs = []
     
-    return new_beliefs
-
-# def sense(color, grid, beliefs, p_hit, p_miss):
-#     new_beliefs = []
+    height = len(grid)
+    width = len(grid[0])
     
-#     height = len(grid)
-#     width = len(grid[0])
-    
-#     # loop through all grid cells
-#     for i in range(height):
-#         row = []
-#         for j in range(width):
-#             hit = (color == grid[i][j])
-#             row.append(beliefs[i][j] * (hit * p_hit + (1-hit) * p_miss))
-#         new_beliefs.append(row)
+    # loop through all grid cells
+    for i in range(height):
+        row = []
+        for j in range(width):
+            hit = (color == grid[i][j])
+            row.append(beliefs[i][j] * (hit * p_hit + (1-hit) * p_miss))
+        new_beliefs.append(row)
         
-#     s = sum(map(sum, new_beliefs))
+    s = sum(map(sum, new_beliefs))
 
-#     for i in range(height):
-#         for j in range(width):
-#             new_beliefs[i][j] = new_beliefs[i][j] / s
+    for i in range(height):
+        for j in range(width):
+            new_beliefs[i][j] = new_beliefs[i][j] / s
             
-#    return new_beliefs
+    return new_beliefs
 
 def move(dy, dx, beliefs, blurring):
     height = len(beliefs)
