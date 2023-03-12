@@ -127,9 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1DVector.cpp" />
+    <ClCompile Include="2DVector.cpp" />
     <ClCompile Include="DeclaringVectors.cpp" />
     <ClCompile Include="InitializingVectors.cpp" />
+    <ClCompile Include="MathAndVector.cpp" />
     <ClCompile Include="NameSpace.cpp" />
+    <ClCompile Include="PythonCppListComparison.cpp" />
     <ClCompile Include="VectorsandFor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
