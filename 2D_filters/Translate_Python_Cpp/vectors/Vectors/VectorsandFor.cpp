@@ -4,7 +4,7 @@
 //TODO: Use the standard namespace
 using namespace std;
 
-int main() {
+int VectorsandFor() {
 
     // Part 1: declare and define a vector with values
     //        {5.0, 5.0, 5.0} and print 
