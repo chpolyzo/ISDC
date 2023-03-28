@@ -19,6 +19,18 @@
 // #include "debugging_helpers.cpp"
 
 using namespace std;
+// create an inline function to reduce the function call overhead
+// Inlining is only a request to the compiler, not a command
+// The compiler can ignore the request for inlining 
+inline int modulo_maker(int var, int modulo)
+{
+	if (var < 0)
+		return ((var + modulo) % modulo); // if input variable is negative return an error
+	if (modulo < 0)
+		return -1;
+	else
+		return (var % modulo);
+};
 
 /**
 	TODO - implement this function
