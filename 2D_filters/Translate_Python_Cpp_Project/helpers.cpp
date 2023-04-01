@@ -46,10 +46,22 @@ inline int modulo_maker(int var, int modulo)
 */
 vector< vector<float> > normalize(vector< vector <float> > grid) {
 	
-	vector< vector<float> > newGrid;
+	int grid_h = grid.size(); // grid_h represents height of newGrid
+	int grid_w = grid[0].size(); // grid_w represents width of newGrid
+	vector<vector<float> >newGrid(grid_h, vector<float>( grid_w, 0));
 
-	// todo - your code here
+	float totalElements = 0.0;
+	for (int h = 0; h < grid_h; h++) { // loop in newGrid height
+		for (int w = 0; w < grid_w; w++) { // loop in newGrid width
+			totalElements += grid[h][w];
+		}
+	}
 
+	for (int h = 0; h < grid_h; h++) { // loop in newGrid height
+		for (int w = 0; w < grid_w; w++) { // loop in newGrid width
+			totalElements += grid[h][w]/totalElements;
+		}
+	}
 	return newGrid;
 }
 
@@ -91,6 +103,51 @@ vector < vector <float> > blur(vector < vector < float> > grid, float blurring) 
 	vector < vector <float> > newGrid;
 	
 	// your code here
+	int grid_h = grid.size(); // grid_h represents height of newGrid
+	int grid_w = grid[0].size(); // grid_w represents width of newGrid
+
+	float central_prob = 1.0 - blurring; //variable for probability in the centre of the window
+	float edge_prob = blurring / 12.0; //variable for the corner edge probability
+	float neigh_prob= blurring / 6.0; //variable for the adjacent neighbouring probability
+
+
+	/*
+	 create the 3x3 window matrix
+	{ edge_prob, neigh_prob, edge_prob },
+	{ neigh_prob, centre_prob,  neigh_prob },
+	{ edge_prob,  neigh_prob,  edge_prob }
+	*/
+	vector < vector <float> > window(3, vector <float>(3, 0));
+	// First Matrix Row in the Window { edge_prob, neigh_prob, edge_prob }
+	window[0][0] = edge_prob;
+	window[0][1] = neigh_prob;
+	window[0][2] = edge_prob;
+
+	// Second Matrix Row in the Window { neigh_prob, centre_prob,  neigh_prob }
+	window[1][0] = neigh_prob;
+	window[1][1] = central_prob;
+	window[1][2] = neigh_prob;
+
+	// Second Matrix Row in the Window { edge_prob,  neigh_prob,  edge_prob }
+	window[2][0] = edge_prob;
+	window[2][1] = neigh_prob;
+	window[2][2] = edge_prob;
+
+	vector< vector<float> > newGrid(grid_h, vector<float>(grid_w, 0));
+
+	for (int h = 0; h < grid_h; ++h) {
+		for (int w = 0; w < grid_w; ++w) {
+			float grid_value = grid[h][w];
+			for (int dx = -1; dx < 2; ++dx) {
+				for (int dy = -1; dy < 2; ++dy) {
+					float mul = window[dx + 1][dy + 1];
+					int new_i = (h + dy + grid_h) % grid_h;
+					int new_j = (w + dx + grid_w) % grid_w;
+					newGrid[new_i][new_j] += mul * grid_value;
+				}
+			}
+		}
+	}
 
 	return normalize(newGrid);
 }

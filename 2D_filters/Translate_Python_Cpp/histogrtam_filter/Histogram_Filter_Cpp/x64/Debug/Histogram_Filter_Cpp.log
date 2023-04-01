@@ -1,1 +1,76 @@
-﻿
+﻿  debugging_helpers.cpp
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\debugging_helpers.cpp(30,4): error C2065: 'cout': undeclared identifier
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\debugging_helpers.cpp(32,3): error C2065: 'cout': undeclared identifier
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\debugging_helpers.cpp(32,11): error C2065: 'endl': undeclared identifier
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\debugging_helpers.cpp(49,4): error C2065: 'cout': undeclared identifier
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\debugging_helpers.cpp(51,3): error C2065: 'cout': undeclared identifier
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\debugging_helpers.cpp(51,11): error C2065: 'endl': undeclared identifier
+  helpers.cpp
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(49,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(50,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(106,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(107,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(109,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(110,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(111,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(136,26): error C2374: 'newGrid': redefinition; multiple initialization
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(103,28): message : see declaration of 'newGrid'
+  localizer.cpp
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(49,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(50,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(106,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(107,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(109,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(110,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(111,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(136,26): error C2374: 'newGrid': redefinition; multiple initialization
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(103,28): message : see declaration of 'newGrid'
+  localizer_c.cpp
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(49,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(50,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(106,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(107,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(109,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(110,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(111,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(136,26): error C2374: 'newGrid': redefinition; multiple initialization
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(103,28): message : see declaration of 'newGrid'
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\localizer_c.cpp(42,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\localizer_c.cpp(43,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\localizer_c.cpp(48,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\localizer_c.cpp(102,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\localizer_c.cpp(103,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\localizer_c.cpp(161,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\localizer_c.cpp(162,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  simulate.cpp
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(49,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(50,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(106,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(107,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(109,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(110,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(111,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(136,26): error C2374: 'newGrid': redefinition; multiple initialization
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(103,28): message : see declaration of 'newGrid'
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\simulate.cpp(55,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  tests.cpp
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(49,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(50,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(106,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(107,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(109,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(110,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(111,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(136,26): error C2374: 'newGrid': redefinition; multiple initialization
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\helpers.cpp(103,28): message : see declaration of 'newGrid'
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\simulate.cpp(55,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\tests.cpp(56,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\tests.cpp(57,19): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\tests.cpp(58,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\tests.cpp(72,21): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\tests.cpp(122,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\tests.cpp(128,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\tests.cpp(130,15): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\tests.cpp(241,19): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_Project\tests.cpp(242,20): warning C4305: '=': truncation from 'double' to 'float'
+  Generating Code...
