@@ -9,12 +9,9 @@
 	this code work. 
 */
 
-#include <iostream>
 #include <algorithm>
 #include "simulate.h"
-#include "localizer.h"
-#include "debugging_helpers.h"
-using namespace std;
+#include "localizer.cpp"
 
 /**
 Constructor for the Simulation class.

@@ -1,1 +1,17 @@
-﻿  VisualStudioProject.vcxproj -> C:\Users\chpol\Documents\ISDC\2D_filters\VisualStudioProject\x64\Debug\VisualStudioProject.exe
+﻿  debugging_helpers.cpp
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\debugging_helpers.cpp(30,4): error C2065: 'cout': undeclared identifier
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\debugging_helpers.cpp(32,3): error C2065: 'cout': undeclared identifier
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\debugging_helpers.cpp(32,11): error C2065: 'endl': undeclared identifier
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\debugging_helpers.cpp(49,4): error C2065: 'cout': undeclared identifier
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\debugging_helpers.cpp(51,3): error C2065: 'cout': undeclared identifier
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\debugging_helpers.cpp(51,11): error C2065: 'endl': undeclared identifier
+  helpers.cpp
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\helpers.cpp(37,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\helpers.cpp(38,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\helpers.cpp(92,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\helpers.cpp(93,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\helpers.cpp(96,21): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\helpers.cpp(97,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\helpers.cpp(98,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\chpol\Documents\ISDC\2D_filters\Translate_Python_Cpp_code\helpers.cpp(231,8): warning C4101: 'color': unreferenced local variable
+  Generating Code...

@@ -17,15 +17,26 @@
 #include <fstream>
 #include "helpers.h"
 // #include "debugging_helpers.cpp"
-#include "debugging_helpers.h"
 
 using namespace std;
 
+/**
+	TODO - implement this function
+
+    Normalizes a grid of numbers. 
+
+    @param grid - a two dimensional grid (vector of vectors of floats)
+		   where each entry represents the unnormalized probability 
+		   associated with that grid cell.
+
+    @return - a new normalized two dimensional grid where the sum of 
+    	   all probabilities is equal to one.
+*/
 vector< vector<float> > normalize(vector< vector <float> > grid) {
 	
 	int grid_h = grid.size(); // grid_h represents height of newGrid
 	int grid_w = grid[0].size(); // grid_w represents width of newGrid
-	vector<vector<float> >newGrid(grid_h, vector<float>( grid_w, 0));
+	vector<vector<float> >newGrid(grid_h, vector<float>(grid_w, 0));
 
 	float totalElements = 0.0;
 	for (int h = 0; h < grid_h; h++) { // loop in newGrid height
@@ -36,7 +47,7 @@ vector< vector<float> > normalize(vector< vector <float> > grid) {
 
 	for (int h = 0; h < grid_h; h++) { // loop in newGrid height
 		for (int w = 0; w < grid_w; w++) { // loop in newGrid width
-			totalElements += grid[h][w]/totalElements;
+			newGrid[h][w] = grid[h][w] / totalElements;
 		}
 	}
 	return newGrid;
@@ -76,7 +87,7 @@ vector< vector<float> > normalize(vector< vector <float> > grid) {
     	   has been blurred.
 */
 vector < vector <float> > blur(vector < vector < float> > grid, float blurring) {
-	
+
 	// your code here
 	int grid_h = grid.size(); // grid_h represents height of newGrid
 	int grid_w = grid[0].size(); // grid_w represents width of newGrid
@@ -84,7 +95,7 @@ vector < vector <float> > blur(vector < vector < float> > grid, float blurring) 
 
 	float central_prob = 1.0 - blurring; //variable for probability in the centre of the window
 	float edge_prob = blurring / 12.0; //variable for the corner edge probability
-	float neigh_prob= blurring / 6.0; //variable for the adjacent neighbouring probability
+	float neigh_prob = blurring / 6.0; //variable for the adjacent neighbouring probability
 
 
 	/*
@@ -109,14 +120,14 @@ vector < vector <float> > blur(vector < vector < float> > grid, float blurring) 
 	window[2][1] = neigh_prob;
 	window[2][2] = edge_prob;
 
-	
+
 	// newGrid = zeros(grid_h, grid_w);
 	for (int h = 0; h < grid_h; ++h) {
 		for (int w = 0; w < grid_w; ++w) {
 			float grid_value = grid[h][w];
 			for (int dx = -1; dx < 2; ++dx) {
 				for (int dy = -1; dy < 2; ++dy) {
-					float mul = window[dx + 1][dy + 1];
+					float mul = window[static_cast<std::vector<std::vector<float, std::allocator<float>>, std::allocator<std::vector<float, std::allocator<float>>>>::size_type>(dx) + 1][static_cast<std::vector<float, std::allocator<float>>::size_type>(dy) + 1];
 					int new_i = (h + dy + grid_h) % grid_h;
 					int new_j = (w + dx + grid_w) % grid_w;
 					newGrid[new_i][new_j] += mul * grid_value;

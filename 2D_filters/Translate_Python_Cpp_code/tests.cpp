@@ -1,9 +1,6 @@
 #include <iostream>
 #include "tests.h"
-#include "simulate.h"
-#include "debugging_helpers.h"
-#include "helpers.h"
-#include "localizer.h"
+#include "simulate.cpp"
 
 using namespace std;
 
